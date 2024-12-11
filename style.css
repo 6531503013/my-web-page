@@ -1,0 +1,111 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  color: #333;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color change */
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #6b4ee3, #b38eb3); /* Gradient with a 135-degree angle */
+  color: white;
+  padding: 2rem 0; /* Increased padding for a more spacious look */
+  text-align: center;
+  font-size: 2rem; /* Larger font for the header */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: background 0.3s ease-in-out; /* Smooth transition for the gradient change */
+}
+
+header:hover {
+  background: linear-gradient(135deg, #4e2c8c, #9a6f9a); /* Darken the gradient slightly on hover */
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  margin: 0;
+  padding: 0.5rem 0; /* More space for the navigation items */
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+}
+
+nav ul li {
+  margin: 0 20px; /* Increased space between items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Section Styles */
+section {
+  padding: 30px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+  flex: 1; /* Allow the section to take up remaining space */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+section:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  margin-top: auto; /* Push the footer to the bottom */
+  font-size: 1rem; /* Set font size for footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the top */
+}
+
+footer a {
+  color: #b38eb3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff; /* Hover effect for footer link */
+}
+
+/* Responsive Design - For smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 20px;
+  }
+}
